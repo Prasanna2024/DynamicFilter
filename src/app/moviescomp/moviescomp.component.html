@@ -1,0 +1,7 @@
+<div class="movie-container">
+    <div class="box-office">
+        <h3>Total box office collection</h3>
+        <h4>{{totalboxoffice | currency:'INR' : 'symbol' : '1.0-0' }}Cr</h4>
+    </div>
+    <app-movietable (newItemEvent)="getCollection($event)"></app-movietable>
+</div>

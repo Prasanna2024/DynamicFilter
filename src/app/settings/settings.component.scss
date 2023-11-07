@@ -1,0 +1,36 @@
+.settings-container {
+    height: 90vh;
+    background-color: #f4f4f4;
+    width: 95vw;
+    padding: 15px;
+}
+
+.input-container {
+    display: flex;
+    height: fit-content;
+    padding: 10px;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+    box-shadow: -1px 3px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -1px 3px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 3px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.delete-button {
+    display: flex;
+    justify-content: center;
+}
+
+.add-container
+{
+    margin: 10px;
+}
+
+select,input
+{
+    width: 200px;
+    padding: 5px;
+}

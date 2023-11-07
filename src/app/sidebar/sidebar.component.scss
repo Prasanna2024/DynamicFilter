@@ -1,0 +1,53 @@
+.sidebar-container {
+    height: 100vh;
+    background-color: white;
+    margin: 0%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+    &:hover{
+        background-color: white !important;
+        width: 200px;
+    }
+}
+
+.sidebar-container:hover .text {
+    display: flex;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.flow {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.text {
+    display:none;
+    margin-right: 3px;
+}
+
+button {
+    height: 40px;
+    width: 40px;
+    background-color: white !important;
+    border: none;
+}
+
+button.flow:hover
+{
+    background-color:  #e5e5e5;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    &:hover {
+        background-color: #e5e5e5;
+    }
+}

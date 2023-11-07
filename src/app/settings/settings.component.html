@@ -1,0 +1,21 @@
+<div class="settings-container">
+    <div class="add-container">
+        <button mat-raised-button color="warn" (click)="Addit()">Add</button>
+    </div>
+    <div class="input-container" *ngFor="let a of input;index as i">
+        <div class="text">
+            <input type="text" (change)="ipchange(nme,i)" #nme [value]="input[i]">
+        </div>
+        <select [(ngModel)]="inpvalu[i]" (change)="changeOption(i)" #val>
+            <ng-container *ngFor="let key of subkeys">
+                <option disabled hidden>{{inpvalu[i]}}</option>
+                <option [value]="key">{{ key }}</option>
+            </ng-container>
+        </select>
+        <div class="delete-button">
+            <button mat-raised-button color="warn" (click)="deleteFilter(i)">
+                <mat-icon>delete</mat-icon>
+            </button>
+        </div>
+    </div>
+</div>
